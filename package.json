@@ -11,7 +11,8 @@
     "client": "yarn --cwd frontend start",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
     "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d"
+    "data:destroy": "node backend/seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install --cwd frontend && yarn build --cwd frontend"
   },
   "author": "Akshay",
   "license": "ISC",
