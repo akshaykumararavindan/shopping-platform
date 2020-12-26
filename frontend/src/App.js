@@ -19,6 +19,8 @@ import UserEditScreen from "./screens/UserEditScreen";
 import ProductListScreen from "./screens/ProductListScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
 
+// console.log("hello");
+
 const App = () => {
   return (
     <Router>
